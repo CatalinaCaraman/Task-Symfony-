@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block title %}Vizualizare de sarcini{% endblock %}
+
+{% block title %}{{ task.title }}{% endblock %}
+
+{% block body %}
+    <h1>{{ task.title }}</h1>
+    <p>{{ task.description }}</p>
+    <p>Data limită: {{ task.dueDate|date('Y-m-d') }}</p>
+    <p>Categorie: {{ task.category }}</p>
+{% endblock %}

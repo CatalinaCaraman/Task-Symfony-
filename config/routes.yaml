@@ -1,0 +1,18 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+task_list:
+    path: /list
+    controller: 'App\Controller\TaskController::list'
+    methods: ['GET']
+task_create:
+    path: /task/create
+    controller: 'App\Controller\TaskController::create'
+    methods: ['GET', 'POST']
+
+task_update:
+    path: /task/update/{id}
+    controller: 'App\Controller\TaskController::update'
+    methods: ['GET', 'POST']
