@@ -94,4 +94,10 @@ class Task
 
         return $this;
     }
+    private $result;
+    public function setResult($result)
+    {
+        $this->result = $result;
+        return $this;
+    }
 }

@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Editare Sarcinămmmmm{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper {
+        margin: 1em auto;
+        max-width: 800px;
+        width: 95%;
+        font: 18px/1.5 sans-serif;
+        padding: 20px; /* Adaugăm un spațiu de 20px în jurul conținutului */
+        background-color: #f2f2f2; /* Culoarea de fundal a containerului */
+        border-radius: 10px; /* Rotunjim colțurile containerului */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adăugăm o umbra subtilă */
+    }
+
+    .example-wrapper code {
+        background: #F5F5F5;
+        padding: 2px 6px;
+    }
+
+    /* Stil pentru formular */
+    .custom-form {
+        margin-top: 20px; /* Adăugăm un spațiu între conținut și formular */
+    }
+
+    /* Stil pentru input-uri */
+    .custom-form input[type="text"], 
+    .custom-form input[type="email"], 
+    .custom-form input[type="password"] {
+        width: 100%; /* Face input-urile să umple întreaga lățime a containerului */
+        padding: 10px; /* Adăugăm spațiu în interiorul input-urilor */
+        margin-bottom: 10px; /* Adăugăm un spațiu între input-uri */
+        border: 1px solid #ccc; /* Adăugăm un chenar subțire */
+        border-radius: 5px; /* Rotunjim colțurile input-urilor */
+    }
+
+    /* Stil pentru butonul de submit */
+    .custom-form button[type="submit"] {
+        background-color: #4caf50; /* Culoarea de fundal a butonului */
+        color: white; /* Culoarea textului butonului */
+        border: none; /* Eliminăm chenarul butonului */
+        padding: 15px 20px; /* Adăugăm spațiu în interiorul butonului */
+        border-radius: 5px; /* Rotunjim colțurile butonului */
+        cursor: pointer; /* Transformăm cursorul într-o mână pentru a indica faptul că butonul este interactiv */
+    }
+
+    /* Stil pentru butonul de submit la hover (când utilizatorul plasează cursorul deasupra) */
+    .custom-form button[type="submit"]:hover {
+        background-color: #45a049; /* Schimbăm culoarea de fundal la hover */
+    }
+</style>
+
+    <h1>Editare Sarcină</h1>
+    <div class="form">
+        {{ form(task_form) }}
+    </div>
+{% endblock %}
